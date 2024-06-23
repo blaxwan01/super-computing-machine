@@ -104,7 +104,7 @@
         // Retrieve the number from localStorage or set it to the initial value if not present
         const numberContainer = document.getElementById('number-container');
         let storedNumber = localStorage.getItem('currentNumber');
-        let initialNumber = storedNumber ? parseInt(storedNumber) : 12375233;
+        let initialNumber = storedNumber ? parseInt(storedNumber) : 12575233;
 
         // Format and display the initial number
         numberContainer.innerText = formatNumber(initialNumber);
@@ -112,7 +112,7 @@
         // Update the number every second
         setInterval(() => {
             // Generate a random number within the range (e.g., 9,000 to 11,000)
-            const randomIncrement = getRandomNumber(100, 500);
+            const randomIncrement = getRandomNumber(300000, 500000);
 
             // Calculate the new number
             initialNumber += randomIncrement;
